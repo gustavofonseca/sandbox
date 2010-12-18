@@ -1,0 +1,43 @@
+10
+
+dir
+25904
+http://svn.symfony-project.com/branches/1.4/test/functional/fixtures/apps/frontend
+http://svn.symfony-project.com
+
+
+
+2009-12-06T20:48:52.154761Z
+24992
+Kris.Wallsmith
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ee427ae8-e902-0410-961c-c3ed070cd9f9
+
+i18n
+dir
+
+config
+dir
+
+lib
+dir
+
+modules
+dir
+
+templates
+dir
+

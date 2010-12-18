@@ -1,0 +1,34 @@
+{% extends "pacient/base.html" %}
+
+{% block title %}Detalhes de {{ pacient.name }}{% endblock %}
+
+{% block content %}
+<span class="vcard">
+  <h2>Details of <span class="fn">{{ pacient.name }}</span></h2>
+  <h4>Status {{ pacient.get_status_display }}</h4>
+  * histórico
+  <fieldset id="contact">
+      <legend>Contact</legend>
+      <strong>Mobile:</strong> {{ pacient.mobile }}<br/>
+      <strong>Residence:</strong> {{ pacient.res_phone }}<br/>
+      <strong>Work:</strong> {{ pacient.com_phone }}<br/>
+      <strong>Res. Address:</strong> {{ pacient.get_formatted_res_address }}<br/>
+      <strong>Work Address:</strong> {{ pacient.get_formatted_com_address }}<br/>
+      <strong>Email:</strong> <a href="mailto:{{ pacient.email }}">{{ pacient.email }}</a><br/>
+    
+  </fieldset>
+  <fieldset id="personal-info">
+      <legend>Info</legend>
+      <strong>CPF:</strong> {{ pacient.cpf }}<br/>
+      <strong>RG:</strong> {{ pacient.rg }}<br/>
+      <strong>Birth:</strong> {{ pacient.birth_date }}<br/>
+      <strong>Civil State:</strong> {{ pacient.get_civil_state_display }}<br/>
+      <strong>Gender:</strong> {{ pacient.get_gender_display }}<br/>
+      <strong>Profession:</strong> {{ pacient.profession }}
+  </fieldset>
+
+  <p class="small">Created at {{ pacient.created_at }} | Modified at {{ pacient.updated_at }}.</p>
+
+  <a href="{% url pacient-list %}">Back</a>
+</span>
+{% endblock %}

@@ -1,0 +1,43 @@
+10
+
+dir
+25904
+http://svn.symfony-project.com/branches/1.4/test
+http://svn.symfony-project.com
+
+
+
+2009-12-08T06:02:07.780556Z
+25063
+Kris.Wallsmith
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ee427ae8-e902-0410-961c-c3ed070cd9f9
+
+unit
+dir
+
+other
+dir
+
+functional
+dir
+
+bin
+dir
+
+bootstrap
+dir
+

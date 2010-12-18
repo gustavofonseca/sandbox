@@ -1,0 +1,21 @@
+{% extends "pacient/base.html" %}
+
+{% block title %}Listagem de Pacientes{% endblock %}
+
+<style type="text/css" media="screen">
+    span.name {
+        color: red;
+    }
+</style>
+
+{% block content %}
+<ul>  
+{% for pacient in pacient_list %}
+    <li>
+        <span class="name"><a href="{{ pacient.get_absolute_url }}">{{ pacient.name }}</a></span><br/>
+        Mobile: {{ pacient.mobile }}<br/>
+        Status: {{ pacient.get_status_display }}
+    </li>
+{% endfor %}
+</ul>
+{% endblock %}

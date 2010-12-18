@@ -1,0 +1,83 @@
+10
+
+dir
+25904
+http://svn.symfony-project.com/branches/1.4/test/functional/fixtures
+http://svn.symfony-project.com
+
+
+
+2009-12-06T20:48:52.154761Z
+24992
+Kris.Wallsmith
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ee427ae8-e902-0410-961c-c3ed070cd9f9
+
+log
+dir
+
+plugins
+dir
+
+apps
+dir
+
+cache
+dir
+
+symfony
+file
+
+
+
+
+2009-12-25T16:45:04.000000Z
+36073c1914105fb3bbb4f1ce4965b4d2
+2009-04-04T14:00:15.361330Z
+16982
+fabien
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+482
+
+config
+dir
+
+lib
+dir
+
+data
+dir
+

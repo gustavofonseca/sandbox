@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block title %}Items List{% endblock %}
+{% block content %}
+
+<h2>Welcome to the gallery!</h2>
+<p><a href="{% url index %}">&laquo; Back to main page</a></p>
+
+<h2>Items</h2>
+{% if object_list %}
+<table border="0" cellspacing="5" cellpadding="5">
+    <tr>
+        <th>Name</th>
+        <th>Sample Thumb</th>
+        <th>Description</th>
+    </tr>
+    
+    {% for item in object_list %}
+    <tr>
+        <td><i>{{ item.name }}</i></td>
+        <td>            
+            {% if item.photo_set.count %}
+            <a href="{{ item.get_absolute_url }}">                
+                <img src="{{ item.photo_set.all.0.image.thumb_url }}" />
+            </a>
+            {% else %}    
+                <span>No photos yet</span>
+            {% endif %}            
+        </td>
+        <td>{{ item.descriptor }}</td>
+    </tr>
+    {% endfor %}    
+</table>
+{% else %}
+<p>There are currently no items to display.</p>
+{% endif %}
+
+{% endblock %}
